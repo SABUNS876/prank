@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ptrodactyl</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://files.catbox.moe/ie98jv.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .login-box img {
+            width: 80px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .login-box button:hover {
+            background-color: darkred;
+        }
+        .forgot {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .copyright {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #777;
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <img src="https://img12.pixhost.to/images/1031/577704060_skyzopedia.jpg" alt="Logo">
+        <input type="text" placeholder="Username or Email"><br>
+        <input type="password" placeholder="Password"><br>
+        <button onclick="playSound()">Login</button>
+        <div class="forgot">FORGOT PASSWORD?</div>
+        <div class="copyright">Panel Installed By Natsu</div>
+    <section>
+        <h3>Buy Panel?</h3>
+        <p>Pencet Link Dibawah Ini:</p>
+        <a href="http://wa.me/6285738107613" target="_blank">Whatsapp</a> |
+        <a href="http://wa.me/6285738107613" target="_blank">Whatsapp 2</a>
+    </section>
+        <audio id="munchkin-sound" src="https://pomf2.lain.la/f/c2ilyw.mp3"></audio>
+    </div>
+
+    <script>
+        function playSound() {
+            var sound = document.getElementById("munchkin-sound");
+            sound.play();
+        }
+    </script>
+</body>
+</html>
